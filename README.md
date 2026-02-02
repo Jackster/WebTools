@@ -4,7 +4,7 @@ A static website showcasing useful tools, built with Astro and hosted on Cloudfl
 
 ## Features
 
-- 📦 Static site generation with Astro.
+- 📦 Static site generation with Astro
 - 🔍 Client-side search with Fuse.js
 - 🎨 Responsive design
 - ⚡ Fast load times
