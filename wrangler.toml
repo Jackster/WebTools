@@ -1,0 +1,7 @@
+# Cloudflare Pages Configuration
+
+# Build command
+command = npm run build
+
+# Publish directory
+publish = "dist"

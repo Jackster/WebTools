@@ -1,0 +1,8 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#f3f4f6"/>
+  <rect x="20" y="20" width="760" height="410" fill="white" rx="8"/>
+  <rect x="40" y="40" width="720" height="60" fill="#3b82f6" rx="4"/>
+  <rect x="40" y="120" width="340" height="280" fill="#1f2937" rx="4"/>
+  <rect x="400" y="120" width="340" height="280" fill="#10b981" rx="4"/>
+  <text x="400" y="410" text-anchor="middle" fill="#6b7280" font-size="24">URL Encoder</text>
+</svg>
