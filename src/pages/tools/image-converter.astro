@@ -1,20 +1,31 @@
 ---
 import ImageConverter from '../../components/ImageConverter';
-import './image-converter.css';
+import ToolHeader from '../../components/ToolHeader';
+import '../../styles/tool-page.css';
+import '../../styles/global.css';
 const title = 'Image Format Converter - Convert Between JPG, PNG, WEBP, GIF, BMP';
+const description = 'Convert images between different formats including JPG, PNG, WEBP, GIF, and BMP. Fast client-side conversion.';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Convert images between different formats including JPG, PNG, WEBP, GIF, and BMP. Fast client-side conversion." />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <ImageConverter client:load />
+  <body class="tool-page">
+    <ToolHeader toolTitle="Image Format Converter" toolDescription={description} />
+    
+    <main class="tool-content">
+      <ImageConverter client:load />
+    </main>
+    
+    <footer class="tool-footer">
+      <p>Built with Astro and hosted on Cloudflare Pages</p>
+    </footer>
   </body>
 </html>

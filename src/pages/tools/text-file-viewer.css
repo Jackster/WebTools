@@ -1,60 +1,42 @@
+/* Text File Viewer Styles - Tool specific styles only */
+
 .text-viewer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: #f9fafb;
-}
-
-.viewer-header {
-  text-align: center;
-  padding: 2rem;
   background: white;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.viewer-header h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem;
-  color: #111827;
-}
-
-.subtitle {
-  color: #6b7280;
-  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
 .controls {
-  padding: 1.5rem 2rem;
-  background: #f9fafb;
-  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .control-group {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
+  align-items: center;
 }
 
 .btn {
   padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.btn:active {
-  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary {
@@ -87,26 +69,24 @@
 .tail-input {
   padding: 0.75rem;
   border: 2px solid #e5e7eb;
-  border-radius: 6px;
-  font-size: 1rem;
-  background: white;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  width: 120px;
 }
 
 .tail-input:focus {
   outline: none;
   border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .file-info {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: #f3f4f6;
-  border-radius: 6px;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
 .file-name {
@@ -123,107 +103,97 @@
 }
 
 .drop-zone {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  background: white;
   border: 3px dashed #d1d5db;
-  border-radius: 8px;
-  margin: 2rem;
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f9fafb;
+  margin-bottom: 2rem;
 }
 
 .drop-zone:hover {
-  background: #f9fafb;
   border-color: #3b82f6;
+  background: #eff6ff;
 }
 
 .drop-zone.has-content {
   display: none;
 }
 
-.drop-zone-content {
-  text-align: center;
-}
-
-.drop-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 1rem;
-  color: #9ca3af;
-}
-
-.drop-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 0.5rem;
-}
-
-.drop-subtitle {
-  color: #6b7280;
-  font-size: 0.9375rem;
-}
-
 .content-display {
-  flex: 1;
   background: #1f2937;
-  border-top: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .content-header {
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
   background: #111827;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .content-header h2 {
-  font-size: 1.5rem;
-  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  margin: 0;
 }
 
 .content-stats {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .stat {
   background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 0.75rem;
   border-radius: 4px;
   font-size: 0.875rem;
-  font-weight: 500;
 }
 
 .content-area {
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 0;
   background: #1f2937;
   color: #e5e7eb;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9375rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
   line-height: 1.6;
   white-space: pre-wrap;
   word-break: break-word;
   overflow: auto;
-  min-height: calc(100vh - 300px);
+  max-height: 500px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
 }
 
 @media (max-width: 768px) {
+  .text-viewer {
+    padding: 1rem;
+  }
+
   .control-group {
-    max-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .content-stats {
-    gap: 1rem;
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
 
-  .content-area {
-    font-size: 0.875rem;
-    padding: 1.5rem;
+  .content-header {
+    flex-direction: column;
+    text-align: center;
   }
 }

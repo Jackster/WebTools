@@ -24,7 +24,7 @@ export default function ImageConverter() {
     setDragActive(true);
   };
 
-  const handleDragLeave = () => {
+  const handleDragLeave = (e: React.DragEvent) => {
     e.preventDefault();
     e.stopPropagation();
     setDragActive(false);
@@ -129,11 +129,6 @@ export default function ImageConverter() {
 
   return (
     <div className="image-converter">
-      <div className="converter-header">
-        <h1>Image Format Converter</h1>
-        <p className="subtitle">Convert images between JPG, PNG, WEBP, GIF, and BMP formats</p>
-      </div>
-
       <div className={`drop-zone ${dragActive ? 'drag-active' : ''} ${imageFile ? 'has-file' : ''}`}>
         <div className="drop-content">
           <div className="drop-icon">

@@ -94,13 +94,6 @@ export default function TextFileViewer() {
 
   return (
     <div className="text-viewer">
-      <div className="viewer-header">
-        <h1>Text File Viewer</h1>
-        <p className="subtitle">
-          Open and view text files with auto-tail functionality
-        </p>
-      </div>
-
       {/* Controls */}
       <div className="controls">
         <div className="control-group">
