@@ -1,0 +1,20 @@
+---
+import TextFileViewer from '../../components/TextFileViewer';
+import './text-file-viewer.css';
+const title = 'Text File Viewer - View and Tail Log Files';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Open and view text files with auto-tail functionality for .log and .txt files" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <TextFileViewer client:load />
+  </body>
+</html>
