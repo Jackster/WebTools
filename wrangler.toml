@@ -1,2 +1,5 @@
-command = "npm run build"
-publish = "dist"
+name = "tools-directory"
+compatibility_date = "2026-02-02"
+
+[assets]
+directory = "./dist"
