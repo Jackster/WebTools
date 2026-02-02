@@ -1,0 +1,20 @@
+---
+import ImageConverter from '../../components/ImageConverter';
+import './image-converter.css';
+const title = 'Image Format Converter - Convert Between JPG, PNG, WEBP, GIF, BMP';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Convert images between different formats including JPG, PNG, WEBP, GIF, and BMP. Fast client-side conversion." />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <ImageConverter client:load />
+  </body>
+</html>

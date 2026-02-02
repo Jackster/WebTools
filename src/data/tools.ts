@@ -16,4 +16,12 @@ export const tools: Tool[] = [
     url: '/tools/text-file-viewer',
     tags: ['text', 'viewer', 'log', 'tail'],
   },
+  {
+    id: 'image-converter',
+    title: 'Image Format Converter',
+    description: 'Convert images between different formats including JPG, PNG, WEBP, GIF, and BMP. Fast client-side conversion.',
+    screenshot: '/images/tools/image-converter.svg',
+    url: '/tools/image-converter',
+    tags: ['image', 'converter', 'jpg', 'png', 'webp', 'gif', 'bmp'],
+  },
 ];
